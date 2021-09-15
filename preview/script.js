@@ -1,7 +1,7 @@
 const getbtn = document.querySelector('button');
 
 // getbtn.onclick = function() {
-//     alert('hi');
+//     alert('hi')
 // };
 getbtn.addEventListener('click', (e) => {
     console.log(e.target);
