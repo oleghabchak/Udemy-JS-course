@@ -91,15 +91,14 @@ window.addEventListener('DOMContentLoaded', () =>  {
 
         setClock('.timer', deadline)
 
-
         //Modal
 
     const modalTrigger = document.querySelectorAll('[data-modal]'),
             modal = document.querySelector('.modal'),
             modalCloseBtn = document.querySelector('[data-close]');
 
-        modalTrigger.forEach(btn => {
-            btn.addEventListener('click', openModal);
+            modalTrigger.forEach(btn => {
+                btn.addEventListener('click', openModal);
         });
 
         function openModal() {
@@ -129,6 +128,7 @@ window.addEventListener('DOMContentLoaded', () =>  {
         });
 
         const  modalTimerID = setTimeout(openModal, 5555 );
+
 
         function showModalByScroll() {
             
