@@ -1,0 +1,30 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "name": "Габчак Олег",
+      "phone": "+380(97) 974 - 84 - 55",
+      "id": 2
+    },
+    {
+      "name": "олег",
+      "phone": "+380(97) 974 - 84 - 55",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "Габчак Олег",
+    "phone": "+380(97) 974 - 84 - 55"
+  }
+}
