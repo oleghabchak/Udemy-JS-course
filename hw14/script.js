@@ -1,4 +1,7 @@
-import {one, two} from './main';
 
-console.log(`${one} and   ${two}`);
-
+try {
+    console.log('normal');
+    console.log(s);
+} catch{
+    console.log(err);
+}
