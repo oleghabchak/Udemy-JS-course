@@ -1,54 +1,45 @@
 import React from 'react';
-import { Component, StrictMode } from 'react';
+import {  StrictMode } from 'react';
 import './App.css';
 
-const Header = () => {
-  return <h2>Hello World</h2>
-}
 
-// const  Field = () => {
-//   const styledField = {
-//     width: '300px'
-//   };
-//   return <input 
-//     placeholder="Type here" 
-//     type='text' 
-//     style={styledField}/>
+
+// class Fields extends Component {
+//   render() {
+//     const styledField = {
+//       width: '300px'
+//     };
+
+//     return <input 
+//               placeholder="Type here" 
+//               type='text' 
+//               style={styledField}/>
+//   }
+
 // }
 
-function Btn() {
-  const text = () =>{
-    return "Log in";
-  } 
-  const p = true;
-  return <button>{p ? "Enter" : text()}</button> 
-}
-
-class Fields extends Component {
-  render() {
-    const styledField = {
-      width: '300px'
-    };
-
-    return <input 
-              placeholder="Type here" 
-              type='text' 
-              style={styledField}/>
-  }
-
+function WhoAmI({name, surname, link}) {
+  return (
+    <div>
+      <h1>My name is {name.first}, surname - {surname} 
+        </h1>
+        <a href={link}>My Link</a>
+    </div>
+  )
 }
 
 function App() {
   return (
     <div className="App">
       <StrictMode>
-        <Header/>
+        <WhoAmI name={{first: 'Alex'}} surname="Habchak" link="facebook.com" />
+        {/* <WhoAmI name="Maria" surname="Gerot" link="facebook.com" /> */}
       </StrictMode>
-      <Fields/>
-      <Btn/>
+      {/* <Fields/> */}
+    
     </div>
   );
 }
 
-export {Header};
+
 export default App;
