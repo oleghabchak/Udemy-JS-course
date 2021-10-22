@@ -1,3 +1,4 @@
+import React from 'react';
 import { Component, StrictMode } from 'react';
 import './App.css';
 
@@ -5,11 +6,37 @@ const Header = () => {
   return <h2>Hello World</h2>
 }
 
-const  Field = () => {
-  return <input placeholder="Type here" type='text'/>
+// const  Field = () => {
+//   const styledField = {
+//     width: '300px'
+//   };
+//   return <input 
+//     placeholder="Type here" 
+//     type='text' 
+//     style={styledField}/>
+// }
+
+function Btn() {
+  const text = () =>{
+    return "Log in";
+  } 
+  const p = true;
+  return <button>{p ? "Enter" : text()}</button> 
 }
 
-functi
+class Fields extends Component {
+  render() {
+    const styledField = {
+      width: '300px'
+    };
+
+    return <input 
+              placeholder="Type here" 
+              type='text' 
+              style={styledField}/>
+  }
+
+}
 
 function App() {
   return (
@@ -17,9 +44,11 @@ function App() {
       <StrictMode>
         <Header/>
       </StrictMode>
-      <Field/>
+      <Fields/>
+      <Btn/>
     </div>
   );
 }
 
+export {Header};
 export default App;
