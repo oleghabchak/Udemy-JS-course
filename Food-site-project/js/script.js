@@ -331,3 +331,10 @@ window.addEventListener('DOMContentLoaded', () =>  {
     })
 
 });
+fetch("https://anime-facts-rest-api.herokuapp.com/api/v1")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+  });
