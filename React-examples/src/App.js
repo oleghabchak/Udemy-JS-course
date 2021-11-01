@@ -33,6 +33,7 @@ function App() {
     <div className="App">
       <StrictMode>
         <WhoAmI name={{first: 'Alex'}} surname="Habchak" link="facebook.com" />
+        <WhoAmI name={{first: 'Maria'}} surname="Gabchak" link="facebook.com" />
         {/* <WhoAmI name="Maria" surname="Gerot" link="facebook.com" /> */}
       </StrictMode>
       {/* <Fields/> */}
