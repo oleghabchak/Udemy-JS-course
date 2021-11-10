@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react'
+
 import {  StrictMode } from 'react';
 import './App.css';
 
@@ -18,23 +19,42 @@ import './App.css';
 
 // }
 
-function WhoAmI({name, surname, link}) {
-  return (
-    <div>
-      <h1>My name is {name.first}, surname - {surname} 
-        </h1>
-        <a href={link}>My Link</a>
-    </div>
-  )
+class WhoAmI extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      years: 27,
+      text: 'plus 1 for age'
+    }
+  }
+
+  nextYear = () => {
+    console.log('654699');
+    this.setState(state => ({
+      years: state.years + 1
+    }))
+  }
+  
+render() {
+      const {name, surname, link} = this.props;
+      return (
+        <div>
+          <button onClick={this.nextYear}>{this.state.text}</button> 
+          <h1>My name is {name}, surname - {surname}, age - {this.state.years}
+            </h1>
+            <a href={link}>My Link</a>
+        </div>
+    )
+  }
 }
 
 function App() {
   return (
     <div className="App">
       <StrictMode>
-        <WhoAmI name={{first: 'Alex'}} surname="Habchak" link="facebook.com" />
-        <WhoAmI name={{first: 'Mari'}} surname="Gabchak" link="facebook.com" />
-        {/* <WhoAmI name="Maria" surname="Gerot" link="facebook.com" /> */}
+        <WhoAmI name='Alex' surname="Habchak" link="facebook.com" />
+        <WhoAmI name='Mari' surname="Gabchak" link="facebook.com" />
+        {/* <WhoAmI name="Maria" name="Maria" surname="Gerot" link="facebook.com" /> */}
       </StrictMode>
       {/* <Fields/> */}
     
