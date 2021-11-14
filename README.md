@@ -1,2 +1,3 @@
 # Udemy-JS-course
-Повний курс по JavaScript + React - с нуля до результата
+Повний курс по JavaScri
+ + React - с нуля до результата
