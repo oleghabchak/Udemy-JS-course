@@ -62,7 +62,7 @@ function App() {
   return (
     <div className="App">
       <StrictMode>
-        <WhoAmI name='Alex' surname="Habchak" link="facebook.com" />
+        <WhoAmI name='Alex' surname="роппаak" link="facebook.com" />
         <WhoAmI name='Mari' surname="Gabchak" link="facebook.com" />
         {/* <WhoAmI name="Maria" name="Maria" surname="Gerot" link="facebook.com" /> */}
       </StrictMode>
