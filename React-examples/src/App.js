@@ -24,7 +24,8 @@ class WhoAmI extends Component {
     super(props);
     this.state = {
       years: 27,
-      text: 'plus 1 for age'
+      text: 'plus 1 for age',
+      position:''
     }
   }
 
@@ -36,22 +37,30 @@ class WhoAmI extends Component {
     }))
   }
   
-  commit = (e) => {
-    console.log(e.target)
+  commitChanges = (e) => {
+    console.log(e.target);
+    this.setState({
+      position: e.target.value
+    })
   }
+
 render() {
       const {name, surname, link} = this.props;
+      const {years, position} = this.state;
       return (
         <div>
           <button onClick={this.nextYear}>{this.state.text}</button> 
-          <h1>My name is {name}, surname - {surname}, age - {this.state.years}
-            </h1>
+          <h1>My name is {name}, 
+              surname - {surname}, 
+              age - {years}, 
+              position - {position}
+          </h1>
             <a href={link}>My Link</a>
             <form>
               <span>Form</span>
               <input  
               type="text"
-            onChange={this.commit} />
+              onChange={this.commitChanges} />
             </form>
         </div>
     )
