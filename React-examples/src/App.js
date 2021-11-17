@@ -30,15 +30,16 @@ class WhoAmI extends Component {
   }
 
 
-  nextYear = () => {
+  nextYear = ()  =>{
     console.log('654699');
     this.setState(state => ({
       years: state.years + 1
     }))
   }
   
-  commitChanges = (e) => {
-    console.log(e.target);
+  commitChanges = (e, color) => {
+
+    console.log(color);
     this.setState({
       position: e.target.value
     })
@@ -60,7 +61,7 @@ render() {
               <span>Form</span>
               <input  
               type="text"
-              onChange={this.commitChanges} />
+              onChange={(e) => this.commitChanges(e, 'some color')} />
             </form>
         </div>
     )
