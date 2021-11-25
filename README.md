@@ -1,3 +1,3 @@
 # Udemy-JS-course
 Повний курс по JavaScri
- + React - с нуля до результата
+ + React - с нуля до результата.
