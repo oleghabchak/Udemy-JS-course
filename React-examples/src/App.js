@@ -23,6 +23,12 @@ padding: 20px;
 margin-bottom: 15px;
 border-radius: 5px;
 box-shadow: 5px 5px 10px #000;
+a {
+  display: block;
+  margin: 10px 0 10px 0;
+  color: ${props =>props.active ? 'red': 'black'
+  };
+}
 `;
 
 const Header =styled.h2`
@@ -59,7 +65,7 @@ render() {
       const {name, surname, link} = this.props;
       const {years, position} = this.state;
       return (
-        <EmpItem>
+        <EmpItem  active>
           <Button onClick={this.nextYear}>{this.state.text}</Button> 
           <Header>My name is {name}, 
               surname - {surname}, 
