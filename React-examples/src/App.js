@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import styled from 'styled-components';
 import {  StrictMode } from 'react';
 import './App.css';
 
@@ -18,7 +18,17 @@ import './App.css';
 //   }
 
 // }
+const EmpItem = styled.div`
+padding: 20px;
+margin-bottom: 15px;
+border-radius: 5px;
+box-shadow: 5px 5px 10px #000;
+`;
 
+const Header =styled.h2`
+font-size: 22px;
+color: green;
+`;
 class WhoAmI extends Component {
   constructor(props) {
     super(props);
@@ -49,13 +59,13 @@ render() {
       const {name, surname, link} = this.props;
       const {years, position} = this.state;
       return (
-        <div>
-          <button onClick={this.nextYear}>{this.state.text}</button> 
-          <h1>My name is {name}, 
+        <EmpItem>
+          <Button onClick={this.nextYear}>{this.state.text}</Button> 
+          <Header>My name is {name}, 
               surname - {surname}, 
               age - {years}, 
               position - {position}
-          </h1>
+          </Header>
             <a href={link}>My Link</a>
             <form>
               <span>Form</span>
@@ -63,14 +73,25 @@ render() {
               type="text"
               onChange={(e) => this.commitChanges(e, 'some color')} />
             </form>
-        </div>
+        </EmpItem>
     )
   }
 }
 
+const Wrapper = styled.div`
+  width: 600px;
+  margin: 80px auto;
+`;
+
+const Button = styled.button`
+border-radius: 25px;
+color: yellow;
+background-color: blue;
+`
+
 function App() {
   return (
-    <div className="App">
+    <Wrapper>
       <StrictMode>
         <WhoAmI name='Alex' surname="роппаak" link="facebook.com" />
         <WhoAmI name='Mari' surname="Gabchak" link="facebook.com" />
@@ -78,7 +99,7 @@ function App() {
       </StrictMode>
       {/* <Fields/> */}
     
-    </div>
+    </Wrapper>
   );
 }
 
