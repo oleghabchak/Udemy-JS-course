@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css';
+import Menu from './Menu';
 
 
 
@@ -7,11 +8,10 @@ import './App.css';
 
 function App() {
   return (
-    <Wrapper>
-    
-    </Wrapper>
-  );
+    <>
+      <h1>"Hello"</h1> 
+      <Menu/>
+    </>
+  )
 }
-
-
 export default App;
