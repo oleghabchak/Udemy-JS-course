@@ -34,7 +34,7 @@ export default class FormSubmit extends Component {
                     <button type="submit">Submit</button>
 
             </form>
-            <h5>Submit input:</h5>
+            <h1>Submit input:</h1>
             <h2>{this.state.submit}</h2>
             </div>
         )

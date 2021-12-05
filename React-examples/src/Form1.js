@@ -22,7 +22,8 @@ export default class Form extends Component {
         return (
             <div>
              <input onChange={this.handleChange} /> 
-            <h5>Controled input:</h5>
+            <h5 style={{fontSize: "30px", border:"solid 3px" 
+            }}>Controled input:</h5>
             <h2>{this.state.input}</h2>
             </div>
         )

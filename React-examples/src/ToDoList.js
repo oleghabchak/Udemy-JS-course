@@ -35,7 +35,7 @@ export default class ToDoList extends Component {
                     <button type="submit">Submit</button>
 
             </form>
-            <h5>Greate TODO List:</h5>
+            <h2 style={{color: "yellow"}}>Greate TODO List:</h2>
             <ul>
                 {this.state.items.map((i, index) =>(
                     <li key={index}>{i}</li>
