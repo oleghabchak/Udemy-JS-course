@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css';
 import Menu from './Menu';
+import Father from './Father';
 
 
 
@@ -11,6 +12,7 @@ function App() {
     <>
       <h1>"Hello"</h1> 
       <Menu/>
+      <Father/>
     </>
   )
 }

@@ -2,8 +2,8 @@ import React from 'react'
 import Funccomponent from './Funccomponent';
 import Ccompoonent from './Classcompoonent';
 import { AroFuncComponent } from './ArrowFuncComponent';
-import Form from './FormSubmit'
-import FormSubmit from './Form1'
+import FormSubmit from './FormSubmit';
+import Father from './Father';
 import ToDoList from './ToDoList';
 const Menu = () => {
     return (
@@ -19,9 +19,9 @@ const Menu = () => {
                 </li>
                 </li>
             </ul>
-            <Form/>
             <FormSubmit/>
             <ToDoList/>
+            <Father/>
         </div>
     )
     
