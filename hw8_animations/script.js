@@ -19,7 +19,7 @@ btn.addEventListener('click', () => requestAnimationFrame(myAnimation));
 //     if (i === 3){
 //         clearInterval(timerIN);
 //     }
-//     console.log('Hello');
+//     console.log('Hellkjhlo');
 //     i++;
 // };
 
