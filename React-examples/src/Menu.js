@@ -12,7 +12,7 @@ const Menu = () => {
                 <li>
                 <Funccomponent name="Alex"/>
                 <li>
-                <AroFuncComponent numbers={[1,2,3,4]}/>
+                <AroFuncComponent numbers={[1,2,3,4.55]}/>
                 </li>
                 <li>
                 <Ccompoonent male="YES"/>
