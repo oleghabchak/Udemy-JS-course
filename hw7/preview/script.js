@@ -15,3 +15,11 @@ btn.addEventListener('mouseover', () => {
 console.log(box.getBoundingClientRect().top);
 
 console.log(document.documentElement.scrollTop);
+
+
+let arr = [1,2,3,4,5]
+
+function get(arr) {
+return arr.lenght
+    
+}
